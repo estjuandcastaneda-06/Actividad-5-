@@ -65,4 +65,11 @@ conda activate brazo
    ```
 6. Se abrirá la ventana de PyBullet con el brazo respondiendo en tiempo real a los potenciómetros.
 
+## Evidencia funcionamiento
+
+https://github.com/user-attachments/assets/9cf1b60c-b4c1-447c-b96b-dcea17986473
+
+## Montaje en fisico 
+
+<img width="960" height="1280" alt="WhatsApp Image 2026-09-22 at 9 40 24 PM" src="https://github.com/user-attachments/assets/92c75783-63ca-437d-a558-b879bd93f5ea" />
 
