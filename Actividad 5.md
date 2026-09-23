@@ -65,6 +65,5 @@ conda activate brazo
    ```
 6. Se abrirá la ventana de PyBullet con el brazo respondiendo en tiempo real a los potenciómetros.
 
-## Autor
 
-Juan — Ingeniería Mecatrónica, Universidad Militar Nueva Granada.
+
