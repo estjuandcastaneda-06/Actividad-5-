@@ -3,14 +3,13 @@ import pybullet_data
 import serial
 import time
 
-# --- Configuracion puerto serial (ajusta segun tu PC) ---
+
 PUERTO = "COM7"      # Cambia por el puerto real de tu ESP32
 BAUDRATE = 115200
 
 ser = serial.Serial(PUERTO, BAUDRATE, timeout=1)
-time.sleep(2)  # esperar reset del ESP32 al abrir el puerto
+time.sleep(2)
 
-# --- Conectar a PyBullet ---
 physics_client = p.connect(p.GUI)
 p.setAdditionalSearchPath(pybullet_data.getDataPath())
 
@@ -25,7 +24,7 @@ for i in range(num_joints):
     print(f"Joint {i}: {name} (tipo: {info[2]})")
 
 def parse_linea(linea):
-    # Espera formato: j1:0.123,j2:-0.456,grip:0.021
+    
     datos = {}
     try:
         for par in linea.strip().split(","):
